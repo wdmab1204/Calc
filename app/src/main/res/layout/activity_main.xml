@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="7dip"
+    android:background="#000000"
+    >
+
+
+    <EditText
+        android:id="@+id/number"
+        android:background="@android:drawable/editbox_background_normal"
+        android:cursorVisible="false"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:backgroundTint="#000000"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:gravity="end"
+        />
+
+    <Button android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_below="@id/number"
+        android:text="DELETE"
+        android:textColor="#ffffff"
+        android:backgroundTint="#151515"
+        android:textSize="22sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="6dp"/>
+
+
+    <TextView
+        android:id="@+id/box"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/number"
+        android:layout_alignParentLeft="@id/delete"
+        android:layout_marginTop="6dp"
+        android:background="#151515"
+        android:cursorVisible="false" />
+
+    <TableLayout
+        android:id="@+id/row1"
+        android:layout_width="fill_parent"
+        android:layout_height="360dp"
+        android:layout_below="@id/delete"
+        android:layout_weight="1">
+        <TableRow
+            android:layout_weight="1">
+            <Button android:id="@+id/n1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="7"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="8"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="9"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="/"
+                android:layout_weight="1"
+                android:backgroundTint="#151515"
+                android:textColor="#ffffff"
+                android:textSize="30sp"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1">
+            <Button android:id="@+id/n5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="4"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n6"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="5"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n7"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="6"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n8"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="x"
+                android:layout_weight="1"
+                android:backgroundTint="#151515"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1">
+            <Button android:id="@+id/n9"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="1"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n10"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="2"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n11"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="3"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n12"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="-"
+                android:layout_weight="1"
+                android:backgroundTint="#151515"
+                android:textColor="#ffffff"
+                android:textSize="30sp"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1">
+            <Button android:id="@+id/n13"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="."
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n14"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="0"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/darker_gray"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n15"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="="
+                android:layout_weight="1"
+                android:backgroundTint="#151515"
+                android:textColor="#ffffff"
+                android:textSize="30sp"/>
+            <Button android:id="@+id/n16"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="+"
+                android:layout_weight="1"
+                android:backgroundTint="#151515"
+                android:textColor="#ffffff"
+                android:textSize="30sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/n17"
+                android:layout_width="0dp"
+                android:layout_height="94dp"
+                android:layout_weight="1"
+                android:backgroundTint="#151515"
+                android:text="1701154 박건우"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
